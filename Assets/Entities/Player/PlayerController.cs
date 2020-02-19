@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Thalmic.Myo;
+using LockingPolicy = Thalmic.Myo.LockingPolicy;
+using Pose = Thalmic.Myo.Pose;
+using VibrationType = Thalmic.Myo.VibrationType;
+
 
 public class PlayerController : MonoBehaviour {
+
+	public GameObject myo = null;
 	public GameObject laser;
 	public float projectileSpeed = 10;
 	public float projectileRepeatRate = 0.2f;
@@ -45,6 +52,9 @@ public class PlayerController : MonoBehaviour {
 		AudioSource.PlayClipAtPoint(fireSound, transform.position);
 	}
 	void Update () {
+		        ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo>();
+
+
 		if(Input.GetKeyDown(KeyCode.Space)){
 			InvokeRepeating("Fire", 0.0001f, projectileRepeatRate);
 		}
