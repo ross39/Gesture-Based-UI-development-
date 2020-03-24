@@ -57,8 +57,8 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo>();
 
-# Need to set up the poses to work with the current keyboard inputs.
-# Have a settings menu where the user can chose between the twO?
+// Need to set up the poses to work with the current keyboard inputs.
+// Have a settings menu where the user can chose between the twO?
 
 		if(thalmicMyo.pose == Pose.Fist){
 			thalmicMyo.Vibrate(VibrationType.Short);
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour {
 		//if(Input.GetKeyUp(KeyCode.Space)){
 		//CancelInvoke("Fire");
 		//}
-#Waving left
+//Waving left
 		if(thalmicMyo.pose == Pose.WaveIn){
 			thalmicMyo.Vibrate(VibrationType.Short);
 			transform.position = new UnityEngine.Vector3(
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour {
 				transform.position.y, 
 				transform.position.z 
 			);
-#Waving right
+//Waving right
 		}else if (thalmicMyo.pose == Pose.WaveOut){
 			thalmicMyo.Vibrate(VibrationType.Short);
 			transform.position = new UnityEngine.Vector3(
