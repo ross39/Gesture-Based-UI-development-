@@ -28,6 +28,6 @@ public class ScoreKeeper : MonoBehaviour {
 		score = 0;
 	}
 
-    //need to save score in playerprefs 
+
 
 }
