@@ -2,7 +2,7 @@
 
 Space Invaders
 
-A game of spaceinvaders that the player can control using the myo armband.
+A game of spaceinvaders that the player can control using the myo armband..
 
 
 
